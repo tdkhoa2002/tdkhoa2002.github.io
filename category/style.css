@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background-color: #FBD46D;
+}
+a {
+    text-decoration: none;
+}
+
+#wrapper header.scroll {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header.scroll > .container > a {
+    color: #ff6600; /*ff6600*/
+    white-space: nowrap;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#wrapper header.scroll .inner-header div #main-menu li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0px auto;
+}
+#wrapper {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+#wrapper header.fixed {
+    background-color: #DEEEEA;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header.fixed > .container > a {
+    color: black; /*ff6600*/
+    white-space: nowrap;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#wrapper header .inner-header #main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header .inner-header #main-menu #category {
+    position: relative;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li {
+    font-size: 15px;
+    height: 60px;
+    width: 183px;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li a {
+    white-space: nowrap;
+    line-height: 0px;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li:hover a{
+    color: orange;
+    background-color: black;
+}
+#wrapper header .inner-header img {
+    width: 200px;
+    background-size: cover;
+}
+#wrapper header .inner-header div #main-menu {
+    display: flex;
+}
+
+#wrapper header .inner-header div #main-menu li {
+    list-style: none;
+    margin-right: 2px;
+}
+#wrapper header .inner-header div #main-menu li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+#wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu .default a{
+    background-color: #C9C5C6;
+    color: black;
+}
+
+#wrapper header .inner-header div #main-menu #category:hover .sub-menu{
+    display: block;
+}
+
+#wrapper header .inner-header div #main-menu .sub-menu .default a {
+    color: orange;
+    background-color: black;
+}
+/*header*/
+#content h2 {
+    color: #CF0000;
+    margin: 100px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#content img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#content #list-products {
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 320px 320px 320px 320px;
+    grid-row-gap: 70px;
+    grid-column-gap: 20px;
+}
+#content #list-products .product {
+    position: absolute;
+    position: relative;
+}
+#content #list-products .product .mask {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.3 );
+    top: 0;
+    left: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+#content #list-products .product .mask > div {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(115, 115, 115,0.7);
+    bottom: 0;
+}
+#content #list-products .product .mask a {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#content #list-products .product img {
+    width: 100%;
+    height: 100%;
+}
+
+#content #list-products .product p {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content #list-products .product .mask:hover {
+    opacity: 1;
+}
+
+/*Content*/
+#footer {
+    background-color: black;
+}
+
+#footer .container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#footer p {
+    color: white;
+    display: inline-block;
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+#footer .container ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+#footer .container ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+#footer .container ul li a i {
+    color: white;
+    font-size: 35px;
+}

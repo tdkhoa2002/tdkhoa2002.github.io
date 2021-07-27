@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper header.scroll {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header.scroll > .container > a {
+    color: #ff6600; /*ff6600*/
+    white-space: nowrap;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#wrapper header.scroll .inner-header div #main-menu li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0px auto;
+}
+#wrapper {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+#wrapper header.fixed {
+    background-color: #DEEEEA;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header.fixed > .container > a {
+    color: black; /*ff6600*/
+    white-space: nowrap;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#wrapper header .inner-header #main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper header .inner-header #main-menu #category {
+    position: relative;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li {
+    font-size: 15px;
+    height: 60px;
+    width: 183px;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li a {
+    white-space: nowrap;
+    line-height: 0px;
+}
+#wrapper header .inner-header #main-menu li > .sub-menu li:hover a{
+    color: orange;
+    background-color: black;
+}
+#wrapper header .inner-header img {
+    width: 200px;
+    background-size: cover;
+}
+#wrapper header .inner-header div #main-menu {
+    display: flex;
+}
+
+#wrapper header .inner-header div #main-menu li {
+    list-style: none;
+    margin-right: 2px;
+}
+#wrapper header .inner-header div #main-menu li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+#wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu default a{
+    background-color: #C9C5C6;
+    color: black;
+}
+
+#wrapper header .inner-header div #main-menu #category:hover .sub-menu{
+    display: block;
+}
+/*header*/
+#content .container h1 {
+    text-transform: uppercase;
+    margin: 50px 0;
+    border-left: 10px solid orange;
+    padding-left: 15px;
+}
+#content .container {
+    position: relative;
+}
+#content .container form {
+    position: absolute;
+    right: 0;
+    top: -250px;
+    width: 500px;
+    height: 480px;
+    background-color: white;
+    border-radius: 20px;
+}
+#content .container form #text-in {
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#content .container form div button {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #66ffcc;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+}
+#content .container form #message label {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+#content .container form #message textarea {
+    width: 410px;
+    height: 200px;
+    margin: 10px 40px;
+    padding: 10px;
+    background-color: #e0ebeb;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+}
+#content .container form .form-control {
+    margin: 30px 0;
+}
+#content .container form .form-control label {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#content .container form .form-control input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #e0ebeb;
+    color: black;
+    font-size: 16px;
+}
+
+#content img {
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+#content .container h2 {
+    margin: 20px 0;
+}
+
+#content .container p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*content*/
+
+footer {
+    background-color: black;
+}
+
+footer .container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+footer p {
+    color: white;
+    display: inline-block;
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+footer .container ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+footer .container ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+footer .container ul li a i {
+    color: white;
+    font-size: 35px;
+}
