@@ -27,6 +27,10 @@ a {
     font-weight: bold;
 }
 
+#wrapper #header .container p i {
+    display: none;
+}
+
 #wrapper header.scroll .inner-header div #main-menu li a {
     display: block;
     text-transform: uppercase;
@@ -199,4 +203,46 @@ footer .container ul li a {
 footer .container ul li a i {
     color: white;
     font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 768px;
+    }
+    
+    #wrapper #header .container p i {
+        display: block;
+        position: absolute;
+        right: 70px;
+        top: 27px;
+        font-size: 50px;
+        color: orange;
+    }
+    #wrapper header .inner-header div #main-menu{
+        position: fixed;
+        right: -500px;
+        top: 100px;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        opacity: 1;
+        background-color: black;
+    }
+    #wrapper header .inner-header div #main-menu li a {
+        color: #ff6600;
+    }
+    #wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu .default a {
+        background-color: #DEEEEA;
+    }
+    #wrapper header.scroll .inner-header div #main-menu li.default a {
+        color: black;
+    }
+    /*header*/
+    #content .container {
+        margin-left: 50px;
+    }
+    #content .container form {
+        display: none;
+    }
 }

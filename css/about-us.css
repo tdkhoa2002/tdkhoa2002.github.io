@@ -27,6 +27,10 @@ a {
     font-weight: bold;
 }
 
+#wrapper #header .container p i {
+    display: none;
+}
+
 #wrapper header.scroll .inner-header div #main-menu li a {
     display: block;
     text-transform: uppercase;
@@ -108,7 +112,7 @@ a {
     line-height: 40px;
 }
 
-#wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu default a{
+#wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu .default a{
     background-color: #C9C5C6;
     color: black;
 }
@@ -233,4 +237,113 @@ footer .container ul li a {
 footer .container ul li a i {
     color: white;
     font-size: 35px;
+}
+
+/* @media screen and (max-width: 768px) {
+    #wrapper #header .container {
+        background-color: black;
+        margin: 0px 0px;
+        max-width: 1382px;
+    }
+    #wrapper #header .container p i {
+        display: block;
+        position: absolute;
+        right: 70px;
+        top: 27px;
+        font-size: 50px;
+        color: orange;
+    }
+    #wrapper #header .container a {
+        text-align: center;
+        padding: 0px 637px;
+        color: #ff6600;
+    }
+    #wrapper header .inner-header #main-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        opacity: 1;
+        background-color: black;
+        transform: translate(100%,15.5%);
+    }
+    #wrapper header .inner-header div #main-menu li a {
+        color: #ff6600;
+    }
+    #content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #content .container.message {
+        width: 180%;
+    }
+
+    #content .container h1 {
+        margin-left: 50px;
+        font-size: 35px;
+    }
+    #content img {
+        width: 180%;
+    }
+
+    #content > div img {
+        height: 100%;
+        width: 180%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    footer {
+        width: 180%;
+    }
+
+    footer .container p {
+        font-size: 26px;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 768px;
+    }
+    
+    #wrapper #header .container p i {
+        display: block;
+        position: absolute;
+        right: 70px;
+        top: 27px;
+        font-size: 50px;
+        color: orange;
+    }
+    #wrapper header .inner-header div #main-menu{
+        position: fixed;
+        right: -500px;
+        top: 100px;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        opacity: 1;
+        background-color: black;
+    }
+    #wrapper header .inner-header div #main-menu li a {
+        color: #ff6600;
+    }
+    #wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu .default a {
+        background-color: #DEEEEA;
+    }
+    #wrapper header.scroll .inner-header div #main-menu li.default a {
+        color: black;
+    }
+    /*header*/
+    #content .container h1 {
+        margin-left: 50px;
+    }
+    #content .container.message {
+        margin-left: 50px;
+    }
+    #content .container form {
+        display: none;
+    }
 }

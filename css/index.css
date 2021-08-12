@@ -33,7 +33,9 @@ a {
     font-size: 26px;
     font-weight: bold;
 }
-
+#wrapper #header .container p i {
+    display: none;
+}
 #wrapper header.scroll .inner-header div #main-menu li a {
     display: block;
     text-transform: uppercase;
@@ -183,6 +185,7 @@ a {
 #content #list-products .product {
     position: absolute;
     position: relative;
+    overflow: hidden;
 }
 #content #list-products .product .mask {
     opacity: 0;
@@ -205,9 +208,10 @@ a {
     position: absolute;
     color: white;
     bottom: 0;
-    left: 50px;
-    margin-bottom: 30px;
+    left: 0;
     text-transform: uppercase;
+    display: block;
+    padding: 18px 50px;
 }
 
 #content #list-products .product img {
@@ -225,6 +229,10 @@ a {
 
 #content #list-products .product .mask:hover {
     opacity: 1;
+}
+#content #list-products .product:hover img {
+    transform: scale(1.2);
+    transition: ease 1s;
 }
 
 
@@ -263,5 +271,47 @@ footer .container ul li a i {
     font-size: 35px;
 }
 
-
-
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 768px;
+    }
+    
+    #wrapper #header .container p i {
+        display: block;
+        position: absolute;
+        right: 70px;
+        top: 27px;
+        font-size: 50px;
+        color: orange;
+    }
+    #wrapper header .inner-header div #main-menu{
+        position: fixed;
+        right: -500px;
+        top: 100px;
+        /* transform: translate(1%,12.5%); */
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        opacity: 1;
+        background-color: black;
+    }
+    #content #list-products {
+        margin-left: 50px;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 320px 320px 320px 320px 320px 320px;
+        grid-row-gap: 70px;
+        grid-column-gap: 20px;
+    }
+    #wrapper header .inner-header div #main-menu li a {
+        color: #ff6600;
+    }
+    #wrapper header .inner-header div #main-menu li:hover a, #wrapper header .inner-header div #main-menu #default a {
+        background-color: #DEEEEA;
+    }
+    #content #anime-name div a {
+        font-size: 18px;
+    }
+    #content #anime-name {
+        margin: 0px 10px;
+    }
+}

@@ -137,6 +137,13 @@ a {
 }
 #content .imagemain {
     position: relative;
+    
+}
+#content .imagemain div:first-child {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
 }
 #content .imagemain img {
     width: 400px;
@@ -207,6 +214,10 @@ a {
 }
 #content .imagemain #info h3:hover {
     opacity: 0.3;
+}
+#content .imagemain div:first-child:hover img {
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
 }
 /*Content*/
 footer {
